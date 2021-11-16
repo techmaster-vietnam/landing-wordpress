@@ -1,0 +1,85 @@
+1. GIẢNG VIÊN:
+Bùi Văn Hiên:
+    - Lập trình viên Fullstack tại Techmsater
+    - 5+ năm kinh nghiệm lập trình lĩnh vực Web
+    - Giảng viên nhiều khóa học ngắn hạn, dài hạn và các khóa học cho doanh nghiệp của Techmaster
+
+Nguyễn Xuân Ba:
+    - 5+ năm kinh nghiệm lập trình Web, Data Analysis
+    - Nhiều kinh nghiệm làm việc trong các dự án out source, startup
+    - Giảng viên nhiều khóa học như Java, Python, React tại Techmaster
+
+Trịnh Minh Cường:
+    - Trên 25 năm kinh nghiệm, Microsoft Technology Evangelist
+    - Đã tham gia phất triển hơn 100 dự án phần mềm trong và ngoài nước.
+    - Đã từng làm việc tại Microsoft Vietnam, HarveyNash Vietnam, Fujitsu Vietnam, Trivision và Pacific R.I.M
+
+2. CHƯƠNG TRÌNH HỌC:
+Javascript căn bản
+    - Giới thiệu Javascript.
+    - Cách sử dụng Javascript trong website.
+    - Biến và các kiểu dữ liệu trong Javascript. Cách viết function trong Javascript.
+    - Lệnh điều kiện trong Javascript.
+    - Cách sử dụng vòng lặp trong Javascript. Các loại vòng lặp trong Javascript.
+    - Làm quen với Object
+
+Lập trình Game với DOM
+    - Giới thiệu về Javascript DOM
+    - Truy cập vào các phần tử DOM
+    - Thao tác với các phần tử DOM
+    - Xử lý sự kiện khi người chơi tương tác
+    - Lập trình các game, ứng dụng : Calculator test, Typing game, Quiz game, Memory card, ...
+
+Lập trình game với Canvas
+    - Giới thiệu về Canvas
+    - Vẽ hình cơ bản trong Canvas
+    - Hướng dẫn sử dụng Class ES6 để định nghĩa các đối tượng
+    - Lắng nghe và xử lý sự kiện khi các đối tượng di chuyển, và đập, ...
+    - Thực hiện các chuyển động cơ bản của các đối tượng
+    - Lập trình các game : Snake game, Brick game, Ứng dụng Paint Bush, ...
+
+3. ĐỐI TƯỢNG HỌC VIÊN
+    - Học sinh cấp 2, cấp 3, học sinh du học, những sinh viên năm đầu đại học
+    - Những người muốn cải thiện kỹ năng lập trình JavaScript của mình nên tham gia khóa học này.
+    - Những người mới bắt đầu lập trình Front End, thông qua khóa học để tự tạo các dự án riêng cho mình.
+
+4. PROJECT HỌC VIÊN
+    - Học viên : Quảng Đức Vinh
+    - Game : Game Tetris
+    - Link : https://vinhqd.github.io/game-tetris/index.html
+
+    - Học viên : Nguyễn Ngọc Minh
+    - Game : Game Pong
+    - Link : https://nguyenngocminh24091997.github.io/DoAnLopGame/
+
+    - Học viên : Lê Gia Nhã
+    - Game : Cờ Vua
+    - Link : https://legianha592.github.io/Game/Final/chess.html
+
+    - Học viên : Đặng Minh Quang
+    - Game : Game Dò Mìn
+    - Link : https://minhquang110786.github.io/GameBoard/index.html
+
+    - Học viên : Trinhj Mạnh Hà
+    - Game : Hangman Game
+    - Link : https://hattoryha.github.io/homework/Hangman/index.html
+
+    - Học viên : Nguyễn Tiến Nam
+    - Game : Memory Game
+    - Link : https://namtien97.github.io/learn_js_by_game/memory_game/v2/index.html
+
+    - Học viên : Bùi Quang Hoàng
+    - Game : Pluszle Game
+    - Link : https://quanghoang8.github.io/PluszleGame/
+
+    - Học viên : Nguyễn Việt Bắc
+    - Game : Ai là triệu phú 
+    - Link : https://vietbacneu.github.io/DeAnGameBYVietBac/
+
+
+5. MỘT SỐ VIDEO
+    - https://www.youtube.com/watch?v=1oJu87Fw2Pg&list=PLlahAO-uyDzLxXczW58cRtPCwa0vUmIH6&index=21
+    - https://www.youtube.com/watch?v=BthVjs2V4iI&list=PLlahAO-uyDzLxXczW58cRtPCwa0vUmIH6&index=19
+    - https://www.youtube.com/watch?v=gVqWSkYjqeQ&list=PLlahAO-uyDzLxXczW58cRtPCwa0vUmIH6&index=12
+    - https://www.youtube.com/watch?v=6ovrlDdQom8&list=PLlahAO-uyDzLxXczW58cRtPCwa0vUmIH6&index=11
+    - https://www.youtube.com/watch?v=IWOm06-AoVU&list=PLlahAO-uyDzLxXczW58cRtPCwa0vUmIH6&index=10
