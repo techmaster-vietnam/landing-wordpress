@@ -15,7 +15,7 @@ a {
   background-color: #38a6f5
   ;
   box-sizing: border-box;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .header .nav_bar {
@@ -406,6 +406,14 @@ a {
 
 .material .content {
   order: 1;
+}
+
+.graduate .image {
+  order: 1;
+}
+
+.graduate .content {
+  order: 0;
 }
 
 @media (max-width: 768px) {
