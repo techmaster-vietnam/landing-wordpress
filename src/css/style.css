@@ -160,7 +160,10 @@ a {
 }
 
 .header .content .banner {
-  width: 53%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .content .content_container {
@@ -176,7 +179,7 @@ a {
 }
 
 .header .content .image {
-  width: 47%;
+  width: 45%;
   box-sizing: border-box;
   padding-left: 5%;
 }
