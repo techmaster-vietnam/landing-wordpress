@@ -1,4 +1,4 @@
-name: CI CD Techmaster Landing Page Game
+name: CI CD Techmaster Wordpress
 on:
   push:
     branches: [ master ]
@@ -36,32 +36,12 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: registry.techmaster.vn/techmaster-game:latest
+          tags: ${{ secrets.DOCKER_REGISTRY }}/${{ secrets.DOCKER_IMAGE}}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
       - name: Verify
         run: echo ${{ steps.docker_build.outputs.digest }}
-      
-      - name: Deploy Stage
-        uses: fjogeleit/http-request-action@master
-        id: deploy
-        with:
-          url: '${{ secrets.WEBHOOK_URL }}'
-          method: 'POST'
 
       - name: Show Response
         run: echo ${{ steps.deploy.outputs.response }}
-
-      - name: Send mail
-        if: always()
-        uses: dawidd6/action-send-mail@v2
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: Build ${{ github.repository }} - Status ${{ job.status }}
-          body: Build ${{ github.repository }} - Status ${{ job.status }}
-          to: hien@techmaster.vn
-          from: Techmaster Devops

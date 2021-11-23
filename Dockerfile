@@ -1,7 +1,7 @@
 # build stage
-FROM golang:1.15-alpine AS build-env
+FROM golang:alpine AS build-env
 
-ENV WDIR techmaster-game
+ENV WDIR techmaster-wordpress
 
 WORKDIR /$WDIR
 
@@ -9,11 +9,27 @@ COPY go.mod .
 
 COPY go.sum .
 
-RUN go mod download
-
 COPY . .
 
+RUN go mod tidy
+
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-w' 
+
+FROM node:latest AS webpack-dist
+
+WORKDIR /app/view
+
+COPY /package.json ./
+
+COPY /webpack.* ./
+
+RUN yarn install
+
+RUN mkdir -p ./src
+
+COPY /src ./src
+
+RUN yarn run build
 
 # final stage
 FROM alpine:latest
@@ -25,9 +41,9 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 WORKDIR /app
 
 # Copy result binary go app to /app folder
-COPY --from=build-env /techmaster-game/landing-game /app/
-COPY --from=build-env /techmaster-game/dist/ /app/dist
+COPY --from=build-env techmaster-wordpress/landing-wordpress app/
+COPY --from=webpack-dist app/view/dist/ /app/dist
 
-ENTRYPOINT ["./landing-game"]
+ENTRYPOINT ["./landing-wordpress"]
 
-EXPOSE 8382
+EXPOSE 9382
