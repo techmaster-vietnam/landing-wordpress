@@ -9,24 +9,25 @@ COPY go.mod .
 
 COPY go.sum .
 
-COPY . .
+RUN go mod download
 
-RUN go mod tidy
+COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-w' 
 
 # final stage
 FROM alpine:latest
 
-RUN mkdir -p app/ /app/dist
+RUN mkdir -p app/ /app/dist /app/draft
 
 RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 
 WORKDIR /app
 
 # Copy result binary go app to /app folder
-COPY --from=build-env techmaster-wordpress/landing-wordpress app/
-COPY /dist/ /app/dist
+COPY --from=build-env techmaster-wordpress/landing-wordpress /app
+COPY --from=build-env techmaster-wordpress/dist/ /app/dist
+COPY --from=build-env techmaster-wordpress/draft/ /app/draft
 
 ENTRYPOINT ["./landing-wordpress"]
 
