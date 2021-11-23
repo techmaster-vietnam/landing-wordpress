@@ -26,7 +26,7 @@ WORKDIR /app
 
 # Copy result binary go app to /app folder
 COPY --from=build-env techmaster-wordpress/landing-wordpress app/
-COPY app/view/dist/ /app/dist
+COPY /dist/ /app/dist
 
 ENTRYPOINT ["./landing-wordpress"]
 
