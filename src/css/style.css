@@ -732,6 +732,31 @@ a {
   }
 }
 
+.infographic_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0px 0px 0px;
+}
+
+.infographic_container .image{
+  width: 70%;
+}
+.infographic_container .image img{
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .infographic_container .image{
+    width: 100%;
+  }
+
+  .infographic_container{
+    padding: 0px 0px 20px 0px;
+  }
+}
+
 .fee_whole {
   display: flex;
   justify-content: center;
